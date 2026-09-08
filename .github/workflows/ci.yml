@@ -21,7 +21,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-node-version: '20'
+      -node-version: '22'
         cache: 'npm' # Best practice: caches dependencies to speed up runs
 
     # 5. Install dependencies (even if empty)
@@ -34,5 +34,5 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v4
       with:
-        node-version: '20'
+        node-version: '22'
         cache: 'npm'
